@@ -5,6 +5,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from api_pedidos.api import app, recuperar_itens_por_pedido
+from api_pedidos.config_logging import logging
 from api_pedidos.esquema import Item
 from api_pedidos.excecao import (
     FalhaDeComunicacaoError,
@@ -14,6 +15,7 @@ from api_pedidos.excecao import (
 
 @pytest.fixture
 def cliente():
+    logging.disable()
     return TestClient(app)
 
 
