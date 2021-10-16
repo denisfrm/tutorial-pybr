@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "projeto_teste_cassio"
+name = "tuto_magalu"
 version = "0.1.0"
 description = ""
 authors = ["Denis Guerra <denis.guerra@luizalabs.com>"]
